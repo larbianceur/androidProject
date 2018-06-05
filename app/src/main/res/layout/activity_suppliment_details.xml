@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".suppliment.details.SupplimentDetails">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimary"
+            android:title="akki"
+            android:titleTextColor="#ffffff">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:text="Suppliments"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageButton
+                    android:id="@+id/buy"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="72dp"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/buy"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="72dp" />
+
+                <ImageButton
+                    android:id="@+id/AddToWallet"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_column="3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="22dp"
+                    android:layout_weight="1"
+                    android:background="?attr/colorPrimary"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/add"
+                    android:layout_marginRight="22dp"
+                    android:layout_alignParentRight="true" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="374dp"
+            android:layout_height="170dp"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="77dp"
+            android:scaleType="fitXY"
+             />
+
+        <RelativeLayout
+            android:layout_below="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true">
+
+
+            <ExpandableListView
+                android:id="@+id/expendListView"
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="0dp"
+                android:layout_alignParentLeft="true" />
+
+
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     tools:context="com.ezi.larbianceur.esigym.LoginActivity">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:gravity="center"
+       android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BuildBody"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:fontFamily="serif"
+        android:layout_marginTop="-100dp"
+        android:paddingBottom="50dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Email:" />
+
+     <EditText
+         android:id="@+id/userNameInput"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Enter your email " />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Password: " />
+
+
+
+     <EditText
+         android:id="@+id/passwordInput"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:inputType="textPassword"
+         android:hint="Enter your password "/>
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" " />
+
+
+   </LinearLayout>
+
+   <TextView
+
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:gravity="center"
+       android:paddingBottom="10dp"
+       android:paddingTop="10dp"
+       android:background="@color/colorCopyright"
+       android:text="Copy right 29.05.2018@esi-isi-sba " />
+
+
+  </RelativeLayout>
+
+ </android.support.design.widget.CoordinatorLayout>
+
+

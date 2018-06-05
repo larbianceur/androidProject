@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:id="@+id/ic_suppliment"
+        android:icon="@drawable/ic_suppliment"
+        android:title="Suppliment"
+        />
+    <item
+        android:id="@+id/ic_motivation"
+        android:icon="@drawable/ic_motivation"
+        android:title="Motivation"
+        />
+
+    <item
+        android:id="@+id/ic_meals"
+        android:icon="@drawable/ic_meals"
+        android:title="Meals"
+        />
+    <item
+        android:id="@+id/ic_workout"
+        android:icon="@drawable/ic_workout"
+        android:title="Workout"
+        />
+    <item
+        android:id="@+id/ic_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        />
+
+
+
+
+</menu>

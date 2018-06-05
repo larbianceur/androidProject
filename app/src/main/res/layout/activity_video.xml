@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#000">
+
+
+<android.support.v7.widget.Toolbar
+    android:id="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/border_grey"/>
+
+<RelativeLayout
+    android:layout_below="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_above="@+id/bottomBar"
+    android:layout_height="match_parent">
+            <VideoView
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:foregroundGravity="center"
+                android:padding="10px" />
+            <ProgressBar
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/progrss"
+                android:visibility="gone"
+                android:layout_centerInParent="true"/>
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomBar"
+        android:layout_alignParentBottom="true">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavBar"
+                android:background="@drawable/border_grey"
+                app:menu="@menu/bottom_navigation_menu"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+

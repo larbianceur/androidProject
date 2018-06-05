@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@drawable/workoutba"
+
+    tools:context="com.ezi.larbianceur.esigym.MainActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:titleTextColor="@color/colorblue"
+        android:background="@drawable/border_grey"
+        />
+<LinearLayout
+    android:id="@+id/texts"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/action_bar"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/text1"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="WELCOME TO ESIGYM "
+        android:textSize="30dp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#000"
+        android:text="@string/home_text"/>
+    <Button
+        android:id="@+id/btnProfile"
+        android:layout_width="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="49dp"
+        android:text="Profile"
+        android:paddingLeft="10sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:background="#0BA2E9"
+        android:drawableLeft="@drawable/ic_workout"/>
+
+    <Button
+        android:id="@+id/btnAboutUs"
+        android:layout_width="350dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="35dp"
+        android:text="About Us"
+        android:paddingLeft="10sp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="bold"
+        android:layout_marginTop="40dp"
+        android:textColor="#ffffff"
+        android:background="#0BA2E9"
+        android:drawableLeft="@drawable/ic_workout"/>
+
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/bottomBar"
+        android:layout_alignParentBottom="true">
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <android.support.design.widget.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavBar"
+                android:background="@drawable/border_grey"
+                app:menu="@menu/bottom_navigation_menu"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
